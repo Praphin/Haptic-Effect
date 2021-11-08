@@ -11,6 +11,7 @@
 		711AE2B927396DA300493A0F /* Haptic_Effect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711AE2AE27396DA200493A0F /* Haptic_Effect.framework */; };
 		711AE2BE27396DA300493A0F /* Haptic_EffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711AE2BD27396DA300493A0F /* Haptic_EffectTests.swift */; };
 		711AE2BF27396DA300493A0F /* Haptic_Effect.h in Headers */ = {isa = PBXBuildFile; fileRef = 711AE2B127396DA200493A0F /* Haptic_Effect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		711AE2C927396DBD00493A0F /* HapticFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711AE2C827396DBC00493A0F /* HapticFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		711AE2B227396DA200493A0F /* Haptic_Effect.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Haptic_Effect.docc; sourceTree = "<group>"; };
 		711AE2B827396DA300493A0F /* Haptic EffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Haptic EffectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		711AE2BD27396DA300493A0F /* Haptic_EffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic_EffectTests.swift; sourceTree = "<group>"; };
+		711AE2C827396DBC00493A0F /* HapticFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				711AE2B127396DA200493A0F /* Haptic_Effect.h */,
+				711AE2C827396DBC00493A0F /* HapticFile.swift */,
 				711AE2B227396DA200493A0F /* Haptic_Effect.docc */,
 			);
 			path = "Haptic Effect";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711AE2C927396DBD00493A0F /* HapticFile.swift in Sources */,
 				711AE2B327396DA200493A0F /* Haptic_Effect.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,9 +365,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.psp.Haptic-Effect";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -389,15 +394,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.psp.Haptic-Effect";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		711AE2C627396DA300493A0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DAY6U6EXRF;
@@ -419,6 +426,7 @@
 		711AE2C727396DA300493A0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DAY6U6EXRF;

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+public struct HapticFile {
+    
+    public static func playHapticEffect() {
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+    }
+}
